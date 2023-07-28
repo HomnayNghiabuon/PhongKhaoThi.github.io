@@ -1,73 +1,99 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-:root{
-    --success-color: #e8f0fe;
-    --error-color: #ed4956;
-}
-::-webkit-scrollbar { display: none; }
 body{
-    height: 100vh;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 50px;
-    background-color: #00000066;
+    max-width: 960px;
+    margin: 0px auto;
 }
-.box{
-    width: 30vw;
-    min-height: 75vh;
-    max-width: 800px;
-    min-width: 400px;
-    background-color: #ffffff;
-    padding: 0px 40px 0px 40px;
-    border-radius: 8px;
-    border: #5554546c solid 1px;
-    overflow: hidden;
+h1{
+    color: white;
+    text-shadow: 3px 3px 3px ;
+    font-size: 35px;
+    text-transform: uppercase;
+
 }
-.box .header{
-    margin: 50px 20px 60px 20px;
+header section{
+    background-image: linear-gradient(#000066,#0066FF);
     position: relative;
 }
-.box .header .logo{
-    max-width: 100%;
-    height: auto;
+header section ul {
+    display: flex;
+    padding-inline-start: unset;
+    
 }
-.box .form input{
-    width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
-    padding: 9px 0px 7px 8px;
-    background-color: #fafafa;
-    font-size: 1.1rem;
-    border: #5554546c solid 1px;
+header section ul li {
+    list-style: none
+    
 }
-#sub{
-    background-color: #0095f6;
-    margin: 20px 0px 20px 0px;
-    transition: 200;
-    border-radius: 8px;
-    font-size: 1.3rem;
+header section ul li.image{
+    margin-top: 2.5%;
+    position: absolute;
+
+}
+img{
+    width: 58%;
+}
+
+header section ul li.title{
+    margin: 1px auto;
+    text-align: center;
+}
+    footer{
+        color: white;
+        background-image: linear-gradient(#000066,#0066FF);
+    }
+.form{
     color: white;
+    background-image: linear-gradient(#0000ff,#00ffff,#33ccff);
+    width: 350px;
+    height: 300px;
+    margin: 10% auto;
+    border-radius: 15px;
 }
-.box .alert{
-    max-width: 100%;
-    margin: 20px 0px 0px 50px;
+input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    margin: 1px 6%;
 }
-.box .quenmk {
+.form table tr td.thead{
     text-align: center;
+    margin-top: 100px;
 }
-.box .quenmk a{
-    color: #00376b;
+
+.form table {
+    top: 25px;
+    margin: 2px auto;
 }
-#showerror{
-    color: var(--error-color);
+.form table tr td{
+    padding-top: 25px;
 }
-.box .err{
-    margin-bottom: 40px;
-    text-align: center;
+.form table tr td button.button1{
+    width: 260px;
+    height: 30px;
+    margin: 5% 1%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: unset;
+    background-color: yellow;
+}
+td.thead{
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 1px;
+}
+footer section{
+   padding: 1px 5px 2px 0 ;
+}
+footer section p{
+    margin-top: 8px;
+ }
+ @media only screen and (max-width: 640px) {
+   
 }
