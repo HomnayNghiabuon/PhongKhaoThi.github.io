@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgOU/Logo-DH-Mo-TPHCM-OU.webp">
-    <link rel="stylesheet" href="template1_2.css">
+    <link rel="stylesheet" href="template5.css">
     <link rel="stylesheet" href="media.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script src="toggle.js"></script>
-    <title>Cơ cấu tổ chức - Phòng khảo thí</title>
+    <script src="login.js"></script>
+    <title>Thông tin tài khoản</title>
 </head>
-<body>
+<body onload="prf()">
     
     <div id="wrapper">
         <div id="header">
@@ -50,64 +51,22 @@
                 </ul>
             </div>
             <div class="content">
-                <div class="title_content slideInUp">
+                <div class="tieude">
                     <h1 class="tieude">
-                        Cơ cấu tổ chức - Phòng khảo thí - Đại học Mở TPHCM
+                        Thông tin tài khoản
                     </h1>
+                    <div id="note">Không có tài khoản đang trong phiên làm việc, vui lòng đăng nhập</div>
                 </div>
-                <div class="calender"><span class="fa fa-calendar">22/7/2023</span></div>
-                <div class="main_content">
-                        <h2>NINH XUÂN HƯƠNG</h2>
-                        <p>Trưởng phòng</p>
-                        <h2>ĐỖ THỊ MỸ HẠNH</h2>
-                        <p>Phó trưởng phòng</p>
-                        <h3>
-                            Chuyên viên:
-                        </h3>
-                        <table>
-                            <tr>
-                                <td>Nguyễn Thị Hồng Thủy</td>
-                                <td>Hà Thị Tuyến</td>
-                                <td>Nguyễn Thanh Hải</td>
-                            </tr>
-                            <tr>
-                                <td>Hoàng Thị Ngọc Nga</td>
-                                <td>Nguyễn Tấn Lợi</td>
-                                <td>Nguyễn Vân Anh</td>
-                            </tr>
-                            <tr>
-                                <td>Huỳnh Thị Ngọc Phú</td>
-                                <td>Trần Thị Việt Hà</td>
-                                <td>Trần Đại Ngân</td>
-                            </tr>
-                            <tr>
-                                <td>Trịnh Đặng Thanh Minh</td>
-                                <td>Thái Chí Biền</td>
-                                <td>Trần Quang Hiền</td>
-                            </tr>
-                            <tr>
-                                <td>Công Chung Thủy</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <h3>
-                            Cộng tác viên:
-                        </h3>
-                        <table>
-                            <tr>
-                                <td>Lâm Kim Oanh</td>
-                            </tr>
-                        </table>
-                        <div class="hr">
-
-                        </div>
-                        <div class="khac">
-                            <h4>Các tin khác</h4>
-                                <span><a href="template1_1.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Lịch sử hình thành phòng khảo thí</a></span></br>
-                                <span><a href="template1_3.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Chức năng nhiệm vụ phòng khảo thí</a></span>
-                        </div>
+                
+                <div id="prf_id" class="main_content">
+                </div>
+                <div class="sign-out">
+                    <button onclick="logout()">
+                        <span id="log">Đăng nhập</span>
+                    </button>
+                </div>
             </div>
+            
         </div>
     </div>
         <div id="footer">

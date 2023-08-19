@@ -1,22 +1,26 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 960px;
     margin: 0px auto;
+    background-image: url("imgOU/OU-VVT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
 }
-h1{
-    color: white;
-    text-shadow: 3px 3px 3px ;
-    font-size: 35px;
-    text-transform: uppercase;
 
-}
 header section{
-    background-image: linear-gradient(#000066,#0066FF);
+    background-color:#0063cd;
     position: relative;
+    top: 0;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
 }
 header section ul {
     display: flex;
     padding-inline-start: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
     
 }
 header section ul li {
@@ -24,64 +28,77 @@ header section ul li {
     
 }
 header section ul li.image{
-    margin-top: 2.5%;
-    position: absolute;
+    position: relative;
 
 }
 img{
-    width: 58%;
+    width: 80%;
 }
 
 header section ul li.title{
     margin: 1px auto;
     text-align: center;
 }
-    footer{
+footer{
         color: white;
-        background-image: linear-gradient(#000066,#0066FF);
-    }
-.form{
-    color: white;
-    background-image: linear-gradient(#0000ff,#00ffff,#33ccff);
-    width: 350px;
-    height: 300px;
-    margin: 10% auto;
-    border-radius: 15px;
+       background-color: #0063cd;
 }
-input{
-    width: 220px;
-    height: 30px;
-    border-radius: 5px;
-    border-color: black;
-    border-width: 1px;
-    margin: 1px 6%;
+.box{
+        margin: 10% 10% 10%;
+        min-height: 75vh;
+        max-width: 450px;
+        background-color: #ffffff;
+        padding: 0px 40px 0px 40px;
+        border-radius: 8px;
+        border: #5554546c solid 1px;
+        overflow: hidden;
 }
-.form table tr td.thead{
-    text-align: center;
-    margin-top: 100px;
+.box h1{
+        text-align: center;
+        color: black;
 }
-
-.form table {
-    top: 25px;
-    margin: 2px auto;
+.box .form input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 9px 0px 7px 8px;
+        background-color: #fafafa;
+        font-size: 1.1rem;
+        border: #5554546c solid 1px;
+        border-radius: 5px;
 }
-.form table tr td{
-    padding-top: 25px;
+#sub{
+        background-color: #0095f6;
+        margin: 20px 0px 20px 0px;
+        transition: 200;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        color: white;
+        height: 50px;
 }
-.form table tr td button.button1{
-    width: 260px;
-    height: 30px;
-    margin: 5% 1%;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: unset;
-    background-color: yellow;
+#sub:hover{
+        background-color: #0063cd;
+        color: black;
 }
-td.thead{
-    padding-bottom: 15px;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
+.box .alert{
+        max-width: 100%;
+        margin: 20px 0px 0px 50px;
+}
+.box .quenmk {
+        text-align: center;
+}
+.box .quenmk a{
+        color: #00376b;
+}
+#showerror{
+        color: var(--error-color);
+}
+.box .err{
+        margin-bottom: 40px;
+        text-align: center;
+}
+#showerror{
+        color: red;
 }
 footer{
     position: relative;
@@ -93,7 +110,9 @@ footer section{
 }
 footer section p{
     margin-top: 8px;
+ }  
+ @media screen and (max-width: 767px) {
+        .box{
+                margin: 10% auto;
+        }
  }
- @media only screen and (max-width: 640px) {
-   
-}

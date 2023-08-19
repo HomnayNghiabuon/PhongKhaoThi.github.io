@@ -9,11 +9,11 @@ let arr_link=[
    "https://tuyensinh.ou.edu.vn/thong-tin-tuyen-sinh-dai-hoc-chinh-quy-nam-2021",
    "http://vber.ou.edu.vn/"
 ];
-let arr_hinh=[
-    "anhhoatdongOU/anh1.png",
-    "anhhoatdongOU/anh2.png",
-    "anhhoatdongOU/anh3.png"
-];
+$(document).ready(function(){
+  $('#toggle').click(function () {
+    $('.nav').slideToggle();
+  })
+})
 function next(){
   count++;
   if(count==arr_slide.length) count=0;
@@ -29,7 +29,6 @@ function clickslide(){
 }
 function nextanh(){
   document.getElementById("anhhoatdong").src=arr_hinh[count];
+  document.getElementById("title_anhhoatdong").innerText=arr_title[count];
 } 
 setInterval("next()",4000);
-
-setInterval("nextanh()",4000);

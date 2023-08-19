@@ -212,69 +212,68 @@ ul.content li a{
 .main_content{
   width: 90%;
 }
-label.title{
-    color: #414141;
-    display: block;
-    font-weight: 400;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.selecttion{
-    width: 90%;
-    color: #666;
-    outline: none;
-    height: 40px;
-    background: #fff;
-    font-size: 13px;
-    border-radius: 0;
-    box-shadow: none;
-    line-height: 20px;
-    padding: 10px 15px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    text-transform: capitalize;
-    box-sizing: border-box;
-
-}
-input{
-    margin-top: 10px;
-    width: 90%;
-    color: #666;
-    outline: none;
-    height: 40px;
-    background: #fff;
-    font-size: 13px;
-    border-radius: 0;
-    box-shadow: none;
-    line-height: 20px;
-    padding: 10px 15px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    text-transform: capitalize;
-    box-sizing: border-box;
-}
-button{
-    color: #666;
-    outline: none;
-    height: 40px;
-    background: #fff;
-    font-size: 13px;
-    border-radius: 0;
-    box-shadow: none;
-    line-height: 20px;
-    padding: 10px 15px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    text-transform: capitalize;
-    box-sizing: border-box
-}
 hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+div.main_content{
+margin: 1px auto;
+}
+table{
+border-collapse: collapse;
+width: 100%;
+}
+table tr{
+  background-color: whitesmoke;
+}
+table tr.first-tr{
+  background-color: #06789f;
 }
 
+table td{
+text-align: center;
+}
+.main_content table td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.main_content table p{
+  padding: .5rem;
+}
+
+hr{
+height: 2px;
+background-color: black;
+}
+.HK{
+font-weight: bold;
+text-transform: uppercase;
+}
+table{
+  position: relative;
+  overflow-x: auto;
+}
+#myBtn {
+  opacity: 1;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 5%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: yellow; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1rem; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 26px; /* Increase font size */
+}
+
+#myBtn:hover {
+  opacity: 0.5;
+  background-color: #555; /* Add a dark-grey background on hover */
+}
