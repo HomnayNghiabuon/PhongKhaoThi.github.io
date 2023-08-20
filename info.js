@@ -41,13 +41,13 @@ function advertise(f){
     let e1 = document.getElementById('cont');
     let e2 = document.getElementById('TNB');
     let e3 = document.querySelector('.list');
-    if(e1!==null){
+    if(e1!=null){
         e1.innerHTML+=h;
     }
-    if(e2!==null){
+    if(e2!=null){
         e2.innerHTML+=g;
     }
-    if(e3!==null){
+    if(e3!=null){
         e3.innerHTML+=j;
     }
     }, 800);
