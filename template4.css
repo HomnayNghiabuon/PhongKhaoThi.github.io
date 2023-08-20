@@ -188,6 +188,7 @@ ul.content li a{
   margin: 4px 4px;
 }
 .content{
+  overflow: scroll;
   background-color: white;
   border-radius:5px ;
   width: 100%;
