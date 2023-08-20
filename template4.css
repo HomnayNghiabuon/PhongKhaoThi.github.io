@@ -188,7 +188,7 @@ ul.content li a{
   margin: 4px 4px;
 }
 .content{
-  overflow: scroll;
+  overflow: auto;
   background-color: white;
   border-radius:5px ;
   width: 100%;
@@ -214,6 +214,7 @@ ul.content li a{
   width: 90%;
 }
 hr{
+    
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
