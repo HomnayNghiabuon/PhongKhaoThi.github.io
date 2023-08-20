@@ -15,18 +15,21 @@ function advertise(f){
     var h='';
     var g='';
     let j='';
+    if(hd!=null)
     for(let i of hd){
         h+=
         `
         <li><a href="${i.link}">${i.val}</a></li>
         `;
     }
+    if(TNB!=null)
     for(let i of TNB){
         g+=
         `
         <li><a href="${i.link}">${i.val}</a></li>
         `;
     }
+    if(IMG!=null)
     for(let i of IMG){
         j+=
         `
