@@ -39,7 +39,7 @@ function check(){
 
 let score = function(x,y,fx){
     if(x===0) return '';
-    else if(y!==null) {
+    else if(y!=null) {
         if(fx>=0) return y.toFixed(fx);
         else return y;
     }
@@ -134,26 +134,26 @@ function subprint(i){
         </td>
         `
         let e=document.getElementById(`bangdiem${String(i+1)}`);
-        if(e!==null) e.innerHTML+=h;
+        if(e!=null) e.innerHTML+=h;
         STT++;
         DTB+=TK_4*a.STC;
         TTC+=a.STC;
     }     
     let e=document.getElementById(`TC${String(i+1)}`);
-    if(e!==null) e.innerHTML=`
+    if(e!=null) e.innerHTML=`
         <p>Điểm trung bình học kì: ${(DTB/TTC).toFixed(2)}</p>
         <p>Số tín chỉ đạt học kì: ${TTC}</p>
     `;
 }
 function print(){
     let e=document.getElementById('xemdiem');
-    if(localStorage.foo!==null){
-        if(e!==null) e.innerHTML= `<a href="index.html" target="_self">Xem điểm</a>`;
-        if(e!==null) e.innerHTML= `<a href="template_4.html" target="_self">Xem điểm</a>`;
+    if(localStorage.foo!=null){
+        if(e!=null) e.innerHTML= `<a href="index.html" target="_self">Xem điểm</a>`;
+        if(e!=null) e.innerHTML= `<a href="template_4.html" target="_self">Xem điểm</a>`;
         let n=data_login[localStorage.foo].diem.length - 1;
         for(let i=n;i>=0;i--){
             let q=document.getElementById('main_cont');
-            if(q!==null){
+            if(q!=null){
                 q.innerHTML+=
                 `
                 <p id="HK${String(i+1)}" class="HK">Học kì ${intToRoman(i+1)}</p>
@@ -254,23 +254,23 @@ function subPrf1(){
                             </div>
                         </div>
         `
-    if(prf_id!==null){
+    if(prf_id!=null){
         prf_id.innerHTML+=h;
     }
 }
 function subPrf2(){
     let e1 = document.getElementById('note');
     let e2 = document.getElementById('log');
-    if(e1!==null){
+    if(e1!=null){
         e1.innerHTML="Tài khoản đang có trong phiên làm việc";
     }
-    if(e2!==null){
+    if(e2!=null){
         e2.innerHTML="Đăng xuất";
     }
 }
 function prf(){
     setTimeout(function(){
-        if(localStorage.foo!==null) {
+        if(localStorage.foo!=null) {
             subPrf1();
             subPrf2();
         }
