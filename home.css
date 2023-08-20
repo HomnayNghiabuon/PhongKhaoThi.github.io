@@ -70,8 +70,12 @@ footer div.map iframe{
   width: 100%;
   height: 100%;
 }
+footer div.contact a{
+  text-decoration: none;
+  color: white;
+}
 /*end--footer*/
-/*MAIN*/
+/*---MAIN---*/
 /* NavBar */
 #toggle{
   background-color: black;
@@ -261,6 +265,7 @@ div.clearfix{
   width: 100%;
   text-align: center;
 }
+/* End-slider */
 .content-left{
   width: 68%;
   background-color: white;

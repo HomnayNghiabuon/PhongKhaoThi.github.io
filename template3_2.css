@@ -39,6 +39,10 @@ h1{
 li.image{
     margin-top: 1%;
 }
+footer a{
+  text-decoration: none;
+  color: white;
+}
 /*End--header*/
 
 /*FOOTER*/

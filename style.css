@@ -110,6 +110,10 @@ footer section{
 }
 footer section p{
     margin-top: 8px;
+ }
+ footer a{
+        color: #ffffff;
+        text-decoration: none;
  }  
  @media screen and (max-width: 767px) {
         .box{

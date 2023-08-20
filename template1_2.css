@@ -58,6 +58,10 @@ footer p{
     color: white;
     background-color:#0063cd;
 }
+footer a{
+  text-decoration: none;
+  color: white;
+}
 /*end--footer*/
 /*MAIN*/
 div.nav{
